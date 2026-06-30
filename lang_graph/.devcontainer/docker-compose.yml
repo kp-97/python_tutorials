@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: langgraph_tutorial
+    container_name: langgraph_tutorial
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
